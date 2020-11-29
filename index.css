@@ -59,3 +59,8 @@
 .img {
     width: 100%;
 }
+
+.list-group .list-group-item {
+    border: none;
+    background-color: #B7C6C3;
+}
