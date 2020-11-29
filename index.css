@@ -43,7 +43,7 @@
 
 /*MainCard*/
 
-#cardParent {
+#maincardParent {
     height: auto;
     background-color: #8D49A5;
 }
@@ -63,4 +63,31 @@
 .list-group .list-group-item {
     border: none;
     background-color: #B7C6C3;
+}
+
+
+/*SubCard*/
+
+#subcardParent {
+    height: auto;
+    background-color: #8D49A5;
+}
+
+#subCard__header,
+#subCard__letter {
+    color: white;
+}
+
+
+/*Footer*/
+
+footer {
+    color: white;
+    width: auto;
+    height: auto;
+    background-color: #8D49A5;
+}
+
+#footer__letter {
+    width: 75%;
 }
