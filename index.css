@@ -1,0 +1,61 @@
+/*Heading*/
+
+#head {
+    background-color: #8D49A5;
+}
+
+#links {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+#links:hover {
+    background-color: #711B8F;
+}
+
+
+/*MainBanner*/
+
+#mainBanner {
+    color: white;
+    height: 88vh;
+    background-color: #710897;
+}
+
+#bannerContent {
+    position: relative;
+    left: 8%;
+}
+
+.btn {
+    color: black;
+    background-color: #EFFFFB;
+    border: none;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #8D49A5;
+}
+
+
+/*MainCard*/
+
+#cardParent {
+    height: auto;
+    background-color: #8D49A5;
+}
+
+#cardChild {
+    width: 100%;
+}
+
+.card {
+    background-color: #B7C6C3;
+}
+
+.img {
+    width: 100%;
+}
