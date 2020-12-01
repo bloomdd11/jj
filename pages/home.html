@@ -2,101 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jobseek</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 
 <body>
     <!--Heading-->
-    <div class="container" id="head">
-        <div class="row ">
-            <div class="col-md-3 col-sm-3 col-3 d-flex flex-row justify-content-start align-self-center">
-                <h1 style="color: white;">Jobseek</h1>
-            </div>
-            <div class="col-md-9 col-sm-9 col-9 d-flex flex-row justify-content-end align-items-center">
-                <a href="#" class="p-4" id="links">Login</a>
-                <a href="#" class="p-4" id="links">Register</a>
-            </div>
+    <nav id="head" class="navbar navbar-expand-lg navbar-light">
+        <a id="heading" class="navbar-brand" href="#">Jobseek</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a id="links" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a id="links" class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a id="links" class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+            </form>
         </div>
-    </div>
+    </nav>
 
     <!--MainBanner-->
-    <div class=" w-100 d-flex align-items-center" id="mainBanner">
+    <div class="w-100 d-flex align-items-center" id="mainBanner">
         <div class="w-75" id="bannerContent">
             <h2 class="font-weight-normal">Build your carrer foundation</h2>
-            <p class="font-weight-light"><mark>Thousands</mark> of company are here</p>
-            <a id="mainBanner__button" class="btn" href="#" role="button">Get started</a>
-        </div>
+            <p class="font-weight-light">
+                <span class="font-weight-bold">Thousnds</span> of company in here, can't wait to see your
+                <span class="font-weight-bold">abilities</span> .
+            </p>
+            <p class="font-weight-light">
+                Find the jobs that <span class="font-weight-bold">match</span> your
+                <span class="font-weight-bold">skills</span>.
+            </p>
+            <a id="mainBanner__button" class="btn" href="#" role="button">Get started</a
+        >
+      </div>
     </div>
 
     <!--MainCard-->
-    <div id="maincardParent" class="container mt-5 mb-5 d-flex align-items-center">
-        <div id="cardChild" class="d-flex flex-row justify-content-around flex-wrap">
-            <div class="card mt-5 mb-5" style="width: 18rem;">
-                <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <h4 class="card-title">Create your carrer</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+    <div
+      id="maincardParent"
+      class="container mt-5 mb-5 d-flex align-items-center"
+    >
+      <div
+        id="cardChild"
+        class="d-flex flex-row justify-content-around flex-wrap"
+      >
+        <div class="card mt-5 mb-5" style="width: 18rem;">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body d-flex flex-column align-items-center">
+            <h4 class="card-title">Create your carrer</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="font-weight-bold">Easy</span> &
+                <span class="font-weight-bold">Fast</span>
+                to seek job
+              </li>
 
-            <div class="card mt-5 mb-5" style="width: 18rem;">
-                <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <h4 class="card-title">Increase your product</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+              <li class="list-group-item">
+                <span class="font-weight-bold">100K+</span> users
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">99% potential</span> if you have
+                skill
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">Free tax</span> for jobseek
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary">Search here</a>
         </div>
+    </div>
+
+    <div class="card mt-5 mb-5" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGVtcGxveWVlfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column align-items-center">
+            <h4 class="card-title">Increase your product</h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    More <span class="font-weight-bold">productive</span>
+                </li>
+                <li class="list-group-item">
+                    To get hire
+                    <span class="font-weight-bold">right candidate</span>
+                </li>
+                <li class="list-group-item">More productive</li>
+                <li class="list-group-item">
+                    <span class="font-weight-bold">Free tax</span> for jobseek
+                </li>
+            </ul>
+            <a href="#" class="btn btn-primary">Create now</a>
+        </div>
+    </div>
+    </div>
     </div>
 
     <!--SubCard-->
     <div id="subcardParent" class="container mt-5 mb-5 d-flex flex-column align-items-center">
-        <h3 id="subCard__header" class="pt-5 pb-2">Companies We've Helped</h3>
-        <p id="subCard__letter">Some of the companies we've helped recruit excellent applicants over the years.</p>
+        <h3 id="subCard__header" class="pt-3">Companies We've Helped</h3>
+        <p id="subCard__letter" class="pb-3">
+            Some of the companies we've helped recruit excellent applicants over the years.
+        </p>
         <div id="cardChild" class="d-flex flex-row justify-content-around flex-wrap">
-            <div class="row mt-3 mb-3">
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
+            <div class="row mb-3 d-flex flex-row justify-content-center">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <img src="https://www.logotaglines.com/wp-content/uploads/2019/08/CocaCola-LogoTagline-Slogan-1200x926.jpg" class="card-img-top" alt="Responsive image" />
                 </div>
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <img src="https://www.kbzbank.com/wp-content/uploads/2019/01/default-image.png" class="card-img-top" alt="Responsive image" />
                 </div>
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <img src="https://teletimesinternational.com/wp-content/uploads/2020/07/Ooredoo-new-logo.jpg" class="card-img-top" alt="Responsive image" />
                 </div>
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
-                </div>
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
-                </div>
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
-                </div>
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
-                </div>
-                <div class="col-md-3 col-sm-2">
-                    <img src="/images/cowomen-pd5FVvQ9-aY-unsplash.jpg" class="card-img-top" alt="Responsive image">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <img src="https://cdn.onefc.com/wp-content/uploads/2020/02/foodpanda-logo.png" class="card-img-top" alt="Responsive image" />
                 </div>
             </div>
         </div>
@@ -104,54 +156,61 @@
 
     <!--Footer-->
     <footer>
-        <div class="row">
-            <div class="col-md-5">
-                <h5>About us</h5>
-                <p id="footer__letter">Lorem ipsum dolor sum magni hic sapiente, est corrupti quo voluptate quam laudantium, nihil, saepe dignissimos.</p>
-                <p>&copy;2020 All right reserver. Powered by <a href="#">Web Study Group</a></p>
-            </div>
-            <div class="col-md-5">
-                <div class="row">
-                    <div id="footer__linkrow" class="col-md-4 col-sm-4">
-                        <h5 class="fontweight-normal">Company</h5>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <h5 class="fontweight-normal">Company</h5>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <h5 class="fontweight-normal">Company</h5>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
-                        <a href="#">Service</a>
+        <div class="container pt-5 pb-5 d-flex flex-column">
+            <div class="row">
+                <div class="col-md-5 pt-2">
+                    <h5>About us</h5>
+                    <p id="footer__letter" class="font-weight-normal">
+                        Jobseek, the job maker company, was created by a group of developers and economists in 2023. In the release year, there are 30K+ employments.
+                    </p>
+                </div>
+                <div class="col-md-5 pt-2 mb-2">
+                    <div class="row">
+                        <div id="footer__linkrow" class="col-md-4 col-sm-4">
+                            <h5 class="fontweight-normal">Company</h5>
+                            <span class="font-weight-light">
+                  <a href="#">Service</a>
+                  <a href="#">Terms&Policy</a>
+                  <a href="#">Privicy</a>
+                </span>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h5 class="fontweight-normal">Resource</h5>
+                            <span class="font-weight-light">
+                  <a href="#">Developerrr</a>
+                  <a href="#">Github</a>
+                </span>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h5 class="fontweight-normal">Future</h5>
+                            <span class="font-weight-light">
+                  <a href="#">Products</a>
+                  <a href="#">Employee</a>
+                  <a href="#">HumanResource</a>
+                </span>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-2 pt-2">
+                    <h5 class="fontweight-normal">Contact us</h5>
+                    <a id="iconlinks" href="#">
+                        <i id="fb" class="fab fa-facebook fa-2x p-1"></i>
+                    </a>
+                    <a id="iconlinks" href="#">
+                        <i id="tt" class="fab fa-twitter fa-2x p-1"></i>
+                    </a>
+                    <a id="iconlinks" href="#">
+                        <i id="ig" class="fab fa-instagram fa-2x p-1"></i>
+                    </a>
+                    <a id="iconlinks" href="#">
+                        <i id="re" class="fab fa-reddit-alien fa-2x p-1"></i>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-2">
-                <a href="#">
-                    <i class="fab fa-facebook fa-3x"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-facebook fa-3x"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-facebook fa-3x"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-facebook fa-3x"></i>
-                </a>
-            </div>
+            <p class="align-self-center pt-5">
+                &copy;2020 All right reserver. Powered by
+                <a href="#">Web Study Group</a>
+            </p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
